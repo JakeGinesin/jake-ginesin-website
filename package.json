@@ -1,0 +1,24 @@
+{
+  "name": "jakeginesin2",
+  "version": "1.0.0",
+  "description": "Jake Ginesin's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=12.10.0"
+  },
+  "https_only": true,
+  "author": "Jake Ginesin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.14",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7"
+  }
+}

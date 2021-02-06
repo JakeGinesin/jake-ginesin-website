@@ -1,0 +1,9 @@
+@font-face{
+  font-family:YaHei;
+  src: url('../assets/fonts/MicrosoftYaHei.ttf');
+}
+@font-face{
+  font-family:TimesNewRoman;
+  src: url('../assets/fonts/TimesNewRoman.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');

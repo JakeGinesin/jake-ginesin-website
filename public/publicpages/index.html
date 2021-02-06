@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- headers -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Jake Ginesin"
+    />
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/fonts.css" />
+    <title>Jake Ginesin</title>
+
+    <!--stylesheets -->
+
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/indexstyles.css"/>
+
+
+  </head>
+  <body onload="load()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="noise-overlay"></div>
+    <div class='top-container'>
+        <div>
+            <img src="public/assets/images/statue1_slow.gif" id='statue1'/>
+        </div>
+        <div id="main-header">
+          Welcome to Jacob Ginesin's Website
+        </div>
+        <div id="explore-below">
+          Explore below
+        </div>
+        <span id='arrow'></span>
+    </div>
+    <div class='about-container' style='padding-top:50px;'>
+      <div>
+        fuck!
+      </div>
+      <aside>
+        <img src="public/assets/images/statue2.gif" id="statue2" />
+      </aside>
+    </div>
+    <script>
+      async function load(){
+        await new Promise(r => setTimeout(r, 2000));
+
+        document.getElementById("statue1").style.opacity = "1";
+        document.getElementById("noise-overlay").style.opacity = "0.04";
+
+        await new Promise(r => setTimeout(r, 1500));
+
+        document.getElementById("main-header").style.opacity = "1";
+
+        await new Promise(r => setTimeout(r, 1500));
+
+        document.getElementById("explore-below").style.opacity= "1";
+        document.getElementById("arrow").style.opacity= "1";
+
+      }
+    </script>
+  </body>
+</html>
