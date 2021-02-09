@@ -34,13 +34,22 @@
         </div>
         <span id='arrow'></span>
     </div>
-    <div class='about-container' style='padding-top:50px;'>
-      <div>
-        fuck!
+    <div class='about-container' id='about' style='padding-top:200px;'>
+      <img src="public/assets/images/statue3.gif" id="statue3" />
+      <div class='about-info'>
+        <div class='about-header'>
+          About Me
+        </div>
+        <div class='about-text'>
+          I'm an 18-year-old developer from Philadelphia with a strong passion for programming, technology, and math.
+          I love to explore the unknown and discover new things about our world.
+          My notable skills include: penatration testing, assembly programming, and automated intelligence development.
+
+        </br>
+        </br>
+        I'm a full-time student at the moment, so I don't have time for many extra projects.
+        </div>
       </div>
-      <aside>
-        <img src="public/assets/images/statue2.gif" id="statue2" />
-      </aside>
     </div>
     <script>
       async function load(){
@@ -57,6 +66,10 @@
 
         document.getElementById("explore-below").style.opacity= "1";
         document.getElementById("arrow").style.opacity= "1";
+
+        //load pages
+
+        document.getElementById("about").style.display="block";
 
       }
     </script>
