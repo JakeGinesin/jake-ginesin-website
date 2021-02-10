@@ -23,7 +23,7 @@ body::-webkit-scrollbar{
   /* border: 1px white solid; */
   z-index:1;
   background-color:black;
-  height:100vh;
+  height:100%;
 }
 .top-container div{
   text-align:center;
@@ -48,7 +48,7 @@ body::-webkit-scrollbar{
   transition: opacity ease-in .5s;
 }
 #main-header{
-  margin-top:-40vh;
+  margin-top:-33vh;
   opacity:0;
   transition: opacity ease-in .5s;
   font-size:45px;
@@ -57,7 +57,7 @@ body::-webkit-scrollbar{
   color:#949494;
 }
 #explore-below{
-  margin-top:-30vh;
+  margin-top:-15vh;
   opacity:0;
   transition: opacity ease-in .5s;
   font-size:25px;
