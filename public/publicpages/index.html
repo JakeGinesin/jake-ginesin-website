@@ -27,14 +27,14 @@
             <img src="public/assets/images/statue1_slow.gif" id='statue1'/>
         </div>
         <div id="main-header">
-          Welcome to Jacob Ginesin's Website
+          Welcome to Jake Ginesin's Website
         </div>
         <div id="explore-below">
           Explore below
         </div>
         <span id='arrow'></span>
     </div>
-    <div class='about-container' id='about' style='padding-top:200px;'>
+    <div class='about-container' id='about' style='padding-top:300px;'>
       <img src="public/assets/images/statue3.gif" id="statue3" />
       <div class='about-info'>
         <div class='about-header'>
@@ -43,7 +43,7 @@
         <div class='about-text'>
           I'm an 18-year-old developer from Philadelphia with a strong passion for programming, technology, and math.
           I love to explore the unknown and discover new things about our world.
-          My notable skills include: penatration testing, assembly programming, and artificial intelligence development.
+          My notable skills include: penatration testing, competitive programming, and artificial intelligence development.
 
         </br>
         </br>
@@ -51,7 +51,42 @@
         </div>
       </div>
     </div>
+    <div class="projects-container" id="projects">
+      <div class="projects-header">
+        My Work
+      </div>
+      <div class="projects-list">
+        <div class="project">
+          <div class="project-title">Hoddit</div>
+          <div class="project-description">Hoddit helps you find the most hottest, fastest growing posts on reddit.com by bringing you rankings and statistics updated every 10 minutes.</div>
+        </div>
+        <div class="project">
+          <div class="project-title">Ultratype</div>
+          <div class="project-description">Ultratype is a sleek, modern typing website. It supports four different modes, including custom word length, random letters, punctuation, and random capitalization.</div>
+        </div>
+        <div class="project">
+          <div class="project-title">JakeGinesin.com</div>
+          <div class="project-description">The website you're looking at right now. More to come.</div>
+        </div>
+        <div class="project">
+          <div class="project-title">Reddit Terminal</div>
+          <div class="project-description">(WIP) a Reddit.com stock exchange website. Invest in subreddits, make profit, climb the rankings.</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-container" id="footer">
+      <!-- <div class="footer-icon-container"> -->
+        <a href="https://github.com/JakeGinesin"><img class="footer-img" src="public/assets/images/github.png"</a>
+        <a href="mailto:jakeginesin@gmail.com"><img class="footer-img" src="public/assets/images/email.png"</a>
+      <!-- </div> -->
+    </footer>
+
     <script>
+
+      document.addEventListener("scroll", ()=>{
+        document.getElementById("arrow").style.opacity = (window.scrollY > 0) ? "0" : "1";
+      });
+
       async function load(){
         await new Promise(r => setTimeout(r, 2000));
 
@@ -70,6 +105,14 @@
         //load pages
 
         document.getElementById("about").style.display="block";
+
+        await new Promise(r => setTimeout(r, 1));
+
+        document.getElementById("projects").style.display="block";
+
+        await new Promise(r => setTimeout(r, 1));
+
+        document.getElementById("footer").style.display="block";
 
       }
     </script>

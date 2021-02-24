@@ -78,18 +78,22 @@ body::-webkit-scrollbar{
   animation: MoveUpDown 4s linear infinite;
   transition: opacity .5s ease-out;
   transition: opacity .5s ease-in;
+
+
   position:absolute;
   left:49.4%;
   right:50%;
   top:85%;
 }
 .about-container{
+  width:100%;
+  height:60vh;
 }
 .about-info{
   float:right;
   padding-top:80px;
   width:500px;
-  width:60%;
+  width:50%;
   display:inline-block;
     padding-right:10%;
     height:100%;
@@ -108,13 +112,113 @@ body::-webkit-scrollbar{
   font-family:Inconsolata;
   letter-spacing:8px;
   color:#949494;
+  padding-bottom:10px;
 }
 #statue3{
   opacity:.6;
   width:400px;
-  margin-left:50px;
+  margin-left:100px;
   float:left;
   display:inline-block;
+}
+
+.projects-container{
+  margin-top:200px;
+  width:100%;
+  margin-bottom:200px;
+  /* border:1px solid white; */
+}
+#projects{
+  display:none;
+}
+.projects-header{
+  width:20%;
+  margin-left:auto;
+  margin-right:auto;
+  /* border:1px solid orange; */
+  text-align:center;
+  font-size:45px;
+  font-family:Inconsolata;
+  letter-spacing:8px;
+  color:#949494;
+  padding-bottom:30px;
+  padding-top:0px;
+}
+/* .projects-list{
+  display:flex;
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
+}
+.project{
+  flex: 0 0 auto;
+  margin:20px;
+  height:300px;
+  width:300px;
+  border:1px solid #949494;
+  border-radius:5px;
+} */
+
+.projects-list{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.project{
+  justify-self: center;
+  height:200px;
+  width:350px;
+  border:2px solid #424242;
+  border-radius:5px;
+  margin-bottom:30px;
+  text-align:center;
+}
+.project-title{
+  font-family:Inconsolata;
+  letter-spacing:8px;
+  font-size:25px;
+  color:#949494;
+  margin-top:5px;
+  padding-top:5px;
+  padding-bottom:10px;
+}
+.project-description{
+  font-family:YaHei;
+  color:#949494;
+  letter-spacing:6px;
+  text-align:center;
+  font-size:14px;
+  padding-left:10px;
+  padding-right:10px;
+}
+#projects{
+  padding-top:100px;
+}
+.footer-container{
+  text-align:center;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height:50px;
+}
+.footer-icon-container{
+  /* width:20%;
+  margin-left:auto;
+  margin-right:auto; */
+}
+.footer-img{
+  height:25px;
+  padding:5px;
+}
+
+#footer{
+  display:none;
 }
 
 #noise-overlay{
